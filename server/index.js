@@ -24,7 +24,7 @@ app.use('/api/auth', authRoute)
 
 
 // Объявляет функцию start, которая асинхронно запускает сервер Express и подключается к базе данных MongoDB при помощи Mongoose.
-async function start () {
+ async function start () {
     try { 
         await mongoose.connect (
             `mongodb+srv://${DB_USER}:${DB_PASSWORD}@fullstack.gbilnmq.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`  
